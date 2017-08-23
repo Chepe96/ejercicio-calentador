@@ -12,12 +12,18 @@ public class Calentador
     //Metodos
     public void calentar()
     {
-        temperatura=temperatura+5;
+        if(temperatura<=27)
+        {
+            temperatura=temperatura+incremento;
+        }
     }
     
     public void enfriar()
     {
-        temperatura=temperatura-5;
+        if(temperatura>=-7)
+        {
+            temperatura=temperatura-incremento;
+        }
     }
     
     public void consultaTemperatura()
