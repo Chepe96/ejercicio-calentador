@@ -6,6 +6,10 @@ public class Calentador
     private int max;
     private int min;
     //Constructor
+    /**
+     * Se inicializan las variables temperatura, incremento, min y max con sus 
+     * respectivos valores, todo esto dentro del constructor.
+     */
     public Calentador()
     {
         temperatura=15;
@@ -14,6 +18,9 @@ public class Calentador
         max=21;
     }
     //Metodos
+    /**
+     * Incrementa la temperatura sin ser mayor a la variable max.
+     */
     public void calentar()
     {
         if(temperatura<max)
@@ -22,6 +29,10 @@ public class Calentador
         }
     }
     
+    /**
+     * Decrementa el valor de temperatura restandole el incremento, y sin pasarse
+     * de la variable min.
+     */
     public void enfriar()
     {
         if(temperatura>min)
@@ -30,6 +41,9 @@ public class Calentador
         }
     }
     
+   /**
+    * Regresa el valor de la temperatura por medio de una cadena.
+    */
    public String consultaTemp()
    {
        String cadResultado="";
